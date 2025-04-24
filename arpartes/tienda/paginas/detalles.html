@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Detalles del producto{% endblock %}
+
+{% block content %}
+
+<!-- Aquí agregar los detalles de los productos -->
+<div class="container mt-5">
+    <h1>Detalles del Producto</h1>
+
+    <!-- Zona de los detalles del producto -->
+    <div class="product-section">
+        <img src="{% static 'DiscoFreno.jpg' %}" alt="Disco de Freno">
+        <div class="product-info text-left">
+            <h3>Nombre del Producto</h3>
+            <p>Descripción del producto.</p>
+            <p>Precio: $000.000</p>
+            <button class="btn btn-primary">Comprar</button>
+            <a class="btn btn-secondary" href="{% url 'tienda' %}">Volver</a>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

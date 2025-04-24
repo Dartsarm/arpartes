@@ -1,0 +1,90 @@
+.background-image {
+    background-image: url('/static/Mantenimiento.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.background-image h1 {
+    font-size: 3rem;
+}
+
+.background-image p {
+    font-size: 1.5rem;
+}
+
+.background-image button {
+    margin: 10px;
+}
+
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.services .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.services img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.carousel-inner {
+    display: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer .social-icons img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.product-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.product-section img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.product-section .product-info {
+    flex: 1;
+}
+.product-section .product-info h3 {
+    margin-bottom: 10px;
+}
+.product-section .product-info p {
+    margin-bottom: 10px;
+}
+.product-section .product-info .btn {
+    margin-right: 10px;
+}

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Tienda{% endblock %}
+
+{% block content %}
+
+<div class="background-image">
+    <div>
+        <h1>Distribuidora AR-Partes</h1>
+        <p>Tu vehículo en las mejores manos; repuestos de alta calidad y un servicio que nunca fallará.</p>
+        <button class="btn btn-primary">Llamar</button>
+        <a class="btn btn-secondary" href="https://wa.me/573227123126" target="_blank" rel="noopener noreferrer">Enviar Mensaje</a>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h1>Tienda</h1>
+
+    <!-- Primera sección de productos -->
+    <div class="product-section">
+        <img src="{% static 'DiscoFreno.jpg' %}" alt="Disco de Freno">
+        <div class="product-info text-left">
+            <h3>Nombre del Producto</h3>
+            <p>Descripción del producto.</p>
+            <p>Precio: $000.000</p>
+            <button class="btn btn-primary">Comprar</button>
+            <a class="btn btn-secondary" onclick="window.location.href='{% url 'detalles' %}'">Detalles</a>
+        </div>
+    </div>
+
+    <!-- Segunda sección de productos -->
+    <div class="product-section">
+        <img src="{% static 'ciguenal.jpg' %}" alt="Cigüeñal">
+        <div class="product-info text-left">
+            <h3>Nombre del Producto</h3>
+            <p>Descripción del producto.</p>
+            <p>Precio: $000.000</p>
+            <button class="btn btn-primary">Comprar</button>
+            <button class="btn btn-secondary" onclick="window.location.href='detalles.html'">Detalles</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- contenedor para la inserción de kits de repuestos -->
+<div class="container mt-5 kit-section">
+    <!-- Primera columna -->
+    <div class="product-section">
+    <div class="col-md-6 text-center">
+        <img src="{% static 'KitSuspension.jpg' %}" alt="Kit de Suspensión">
+        <h3>Nombre del kit</h3>
+        <p>Descripción del kit</p>
+        <p>$000.00</p>
+        <button class="btn btn-primary">Comprar</button>
+        <button class="btn btn-secondary" onclick="window.location.href='detalles.html'">Detalles</button>
+    </div>
+    <!-- Segunda columna -->
+    <div class="col-md-6">
+        <div class="row mb-5">
+            <div class="col-md-12 text-center">
+                <img src="{% static 'KitDireccion.jpg' %}" alt="Kit dirección">
+                <h3>Nombre del kit</h3>
+                <p>Descripción del kit</p>
+                <p>$000.00</p>
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" onclick="window.location.href='detalles.html'">Detalles</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="{% static 'transmision.jpg' %}" alt="Kit de transmisión">
+                <h3>Nombre del kit</h3>
+                <p>Descripción del kit</p>
+                <p>$000.00</p>
+                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-secondary" onclick="window.location.href='detalles.html'">Detalles</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
